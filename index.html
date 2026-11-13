@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weather Now</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Weather Now</h1>
+  <p class="sub">Search any city to see its current weather.</p>
+  <form id="form">
+    <input id="q" type="search" placeholder="Try Bhopal, London or Tokyo" aria-label="City name" autocomplete="off">
+    <button type="submit">Search</button>
+  </form>
+  <div id="recent-wrap" hidden><span>Recent:</span><div id="recent"></div></div>
+  <section id="out" aria-live="polite"></section>
+  <p class="credit">Weather data from the free Open-Meteo API.</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
